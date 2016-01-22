@@ -1,0 +1,25 @@
+// yellow shirt every 3rd day, pink every 7th day
+//if multiple of both, then it's blue tank
+// please enter numbered day of week
+
+var dayOfSummer = prompt ("What numbered day of summer is it?");
+if (dayOfSummer%3 == 0 && dayOfSummer%7 == 0 )
+	{
+	console.log("it is a blue tank");
+	}
+else if (dayOfSummer%3 == 0)
+	{
+	console.log("it is a yellow shirt");
+	}
+else if (dayOfSummer%7 == 0)
+	{
+	console.log("it is a pink shirt");
+	}
+else if (dayOfSummer === NaN)
+	{ 
+	console.log("Please enter a number");
+	}
+else
+	{
+	console.log("numbered day does not specify clothes");
+	}
